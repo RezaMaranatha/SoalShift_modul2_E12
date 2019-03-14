@@ -51,7 +51,7 @@ int main(){
 		}
 		else{
 		     while ((wait(&status)) > 0);
-		     int file_desc = open("daftar.txt",O_WRONLY | O_APPEND); 
+		     int file_desc = open("daftar.txt",O_WRONLY); 
                      dup2(p[0], 0);
                      close(p[1]);
                      dup2(file_desc, 1);
