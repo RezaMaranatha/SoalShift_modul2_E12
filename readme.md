@@ -17,3 +17,4 @@ Parent process saya gunakan untuk mengambil input dari process yang mengirim has
 # 4
 
 # 5
+Untuk mengerjakan nomor 5, kita butuh mencari tanggal dan waktu hari itu, untuk mencarinya kita menggunakan function time() di c untuk mendapatkan waktu hari ini `time_t now = time(NULL);` parameter NULL me-return tanggal dan waktu.
