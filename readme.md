@@ -3,7 +3,7 @@ by:<br/>
 I Dewa Putu Wiprah A      (05111740000152)<br/>
 Reza Adipatria Maranatha  (05111740000186)
 # 1
-
+Untuk mengerjakan soal nomor 1, pertama kita harus mengetahui dimana file .png disimpan, kemudian diakses menggunakan `opendir("path_of_file")`, lalu gunakan readdir untuk membaca semua file yang ada dalam directory yang diakses menggunakan opendir. Kemudian cek apakah file tersebut memiliki ekstensi .png atau tidak. Jika file tersebut memiliki ekstensi .png, maka file tersebut akan diubah nama file nya menjadi "[namafile]_grey.png_" 
 # 2
 
 # 3
@@ -17,4 +17,4 @@ Parent process saya gunakan untuk mengambil input dari process yang mengirim has
 # 4
 
 # 5
-Untuk mengerjakan nomor 5, kita butuh mencari tanggal dan waktu hari itu, untuk mencarinya kita menggunakan function time() di c untuk mendapatkan waktu hari ini `time_t now = time(NULL);` parameter NULL me-return tanggal dan waktu.
+Untuk mengerjakan nomor 5, kita butuh mencari tanggal dan waktu hari itu, untuk mencarinya kita menggunakan function time() di c untuk mendapatkan waktu hari ini `time_t now = time(NULL);` parameter NULL me-return tanggal dan waktu. Kemudian kita buat file pointer untuk menunjuk ke directory syslog. Kemudian kita buat lagi file pointer untuk membuat file log#.log , lalu kita isi file log#.log dengan mengcopy isi file syslog, kita lakukan membuat file tersebut sebanyak 30x menggunakan counter. Setiap selesai membuat file, kita sleep program selama 60 detik agar file log terbuat setiap 1 menit. dan membuat folder setiap 30 menit.
