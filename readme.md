@@ -3,7 +3,7 @@ by:<br/>
 I Dewa Putu Wiprah A      (05111740000152)<br/>
 Reza Adipatria Maranatha  (05111740000186)
 # 1
-Untuk mengerjakan soal nomor 1, pertama kita harus mengetahui dimana file .png disimpan, kemudian diakses menggunakan `opendir("path_of_file")`, lalu gunakan readdir untuk membaca semua file yang ada dalam directory yang diakses menggunakan opendir. Kemudian cek apakah file tersebut memiliki ekstensi .png atau tidak. Jika file tersebut memiliki ekstensi .png, maka file tersebut akan diubah nama file nya menjadi "[namafile]_grey.png_" 
+Untuk mengerjakan soal nomor 1, pertama kita harus mengetahui dimana file .png disimpan, kemudian diakses menggunakan `opendir("path_of_file")`, lalu gunakan readdir untuk membaca semua file yang ada dalam directory (`readdir(dir)) != NULL`) yang diakses menggunakan opendir. Kemudian cek apakah file tersebut memiliki ekstensi .png atau tidak (menggunakan strcmp). Jika file tersebut memiliki ekstensi .png, maka file tersebut akan diubah nama file nya menjadi "[namafile]_grey.png"_ _ dan diletakan dalam directory /home/[user]/modul2/gambar. Program dijalankan dibalik layar menggunakan daemon.  
 # 2
 
 # 3
