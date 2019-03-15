@@ -46,13 +46,21 @@ int main() {
 
 	while( (sd = readdir(dir)) != NULL )
 	{
-		int len=0, ret=0;
+		int len=0, ret=0, len_temp=0;
 		char temp[50];
+		char format[5];
+		char format_check[5];
 		memset(temp,0,sizeof(temp));
+		memset(format,0,sizeof(format));
 
 		strcpy(temp, sd->d_name);
 		len = strlen(temp);
-		if(len > 2)
+
+		len_temp = len-4;
+		memcpy(format, temp+len_temp, 4);
+		strcpy(format_check,".png");
+		
+		if(len > 2 && (strcmp(format,format_check) == 0))
 		{
 			char temp2[50];
 			memset(temp2,0,sizeof(temp2));
