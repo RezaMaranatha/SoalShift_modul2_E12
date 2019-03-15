@@ -17,4 +17,4 @@ Parent process saya gunakan untuk mengambil input dari process yang mengirim has
 # 4
 
 # 5
-Untuk mengerjakan nomor 5, kita butuh mencari tanggal dan waktu hari itu, untuk mencarinya kita menggunakan function time() di c untuk mendapatkan waktu hari ini `time_t now = time(NULL);` parameter NULL me-return tanggal dan waktu.
+Untuk mengerjakan nomor 5, kita butuh mencari tanggal dan waktu hari itu, untuk mencarinya kita menggunakan function time() di c untuk mendapatkan waktu hari ini `time_t now = time(NULL);` parameter NULL me-return tanggal dan waktu. Kemudian kita buat file pointer untuk menunjuk ke directory syslog. Kemudian kita buat lagi file pointer untuk membuat file log#.log , lalu kita isi file log#.log dengan mengcopy isi file syslog, kita lakukan membuat file tersebut sebanyak 30x menggunakan counter. Setiap selesai membuat file, kita sleep program selama 60 detik agar file log terbuat setiap 1 menit. dan membuat folder setiap 30 menit.
